@@ -1,0 +1,11 @@
+variant,sachin_avg_index,kohli_avg_index,sachin_sr_index,kohli_sr_index,average_leader,sr_leader
+Match index: All top-order peers (headline),126.2,149.6,115.4,107.7,Kohli,Sachin
+Match index: Team-mates only,125.3,142.0,116.3,104.0,Kohli,Sachin
+Match index: Opposition top order only,127.0,155.8,114.7,110.6,Kohli,Sachin
+Match index: Full Member matches only,122.7,149.5,113.8,107.8,Kohli,Sachin
+Average+/SR+: All matches (headline),124.3,147.9,116.8,111.5,Kohli,Sachin
+Average+/SR+: Full Member matches only,121.9,144.6,116.2,110.2,Kohli,Sachin
+Bowling-adj. Average+/SR+: All matches (headline),125.7,148.8,117.2,111.2,Kohli,Sachin
+Bowling-adj. match index: All matches (headline),128.7,147.3,117.0,107.3,Kohli,Sachin
+Bowling-adj. Average+/SR+: Full Member matches only,123.6,144.5,116.7,109.7,Kohli,Sachin
+Bowling-adj. match index: Full Member matches only,125.9,147.2,115.7,107.4,Kohli,Sachin

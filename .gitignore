@@ -1,0 +1,15 @@
+# intermediate files rebuilt by src/01_load_validate.py and src/05_opposition.py
+data/processed/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,9 @@
+index,measure,sachin,sachin_lo,sachin_hi,kohli,kohli_lo,kohli_hi,gap_kohli_minus_sachin,gap_lo,gap_hi,prob_kohli_ahead
+Match index,Average,126.248,113.264,140.881,149.56,129.763,170.99,23.312,-1.491,48.408,0.968
+Match index,Strike rate,115.405,111.749,118.816,107.655,104.211,111.079,-7.75,-12.756,-2.875,0.0
+"Match index, bowling-adjusted",Average,128.668,114.684,143.271,147.288,128.34,168.207,18.62,-5.596,43.688,0.936
+"Match index, bowling-adjusted",Strike rate,116.993,113.586,120.578,107.262,103.857,110.732,-9.732,-14.727,-4.655,0.0
+Average+ / SR+,Average,124.322,112.341,137.978,147.887,129.644,167.592,23.565,2.532,46.563,0.984
+Average+ / SR+,Strike rate,116.841,113.392,120.292,111.5,107.915,114.913,-5.341,-10.235,-0.484,0.012
+"Average+ / SR+, bowling-adjusted",Average,125.664,112.505,139.323,148.79,131.333,168.403,23.126,1.196,45.796,0.98
+"Average+ / SR+, bowling-adjusted",Strike rate,117.249,113.746,120.569,111.177,107.694,114.645,-6.072,-11.034,-1.141,0.006
