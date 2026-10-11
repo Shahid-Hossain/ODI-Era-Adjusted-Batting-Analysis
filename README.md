@@ -8,6 +8,26 @@ This is a rebuild of my MS Data Analysis final project ([report](report/Final_Pr
 
 ---
 
+## Key findings
+
+Match-adjusted index, where 100 = the other top-order batters in the same matches (95% range in brackets):
+
+| | Sachin | Kohli |
+|---|---|---|
+| **Accumulating** (average index) | 126 (113–141) | **150** (130–171) |
+| **Scoring fast** (strike-rate index) | **115** (112–119) | 108 (104–111) |
+
+- **Kohli was the more dominant accumulator.** He comes out ahead in 97–98% of re-drawn careers: very likely a real gap, though its size is uncertain.
+- **Sachin was the more dominant fast scorer.** He comes out ahead in 99–100% of re-drawn careers, and in every situation tested.
+- **Both results hold in all 10 robustness checks**, including after adjusting for the strength of bowling attacks faced.
+- **These are per-innings quality measures.** They don't capture Sachin's longevity and volume (a 23-year career, 18,426 runs), which is a big part of his case.
+
+![Headline indexes with confidence ranges](outputs/charts/06_headline_indexes.png)
+
+Full results are in [Findings](#findings); how to interpret the numbers is in [How to read these indexes](#how-to-read-these-indexes).
+
+---
+
 ## The code
 
 The pipeline runs in nine stages. Each one is a single file and each answers one question.
