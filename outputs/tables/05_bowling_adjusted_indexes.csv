@@ -1,0 +1,5 @@
+variant,player,adj_career_avg,adj_career_sr,bowling_adj_average_plus,bowling_adj_sr_plus,bowling_adj_match_avg_index,bowling_adj_match_sr_index
+All matches (headline),Sachin Tendulkar,45.99,87.36,125.66,117.25,128.67,116.99
+All matches (headline),Virat Kohli,60.13,94.41,148.79,111.18,147.29,107.26
+Full Member matches only,Sachin Tendulkar,45.18,86.85,123.56,116.69,125.92,115.69
+Full Member matches only,Virat Kohli,60.2,94.63,144.46,109.7,147.22,107.44

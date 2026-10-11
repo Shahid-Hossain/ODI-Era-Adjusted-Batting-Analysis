@@ -1,0 +1,5 @@
+player,group,innings,fifty_plus,hundreds,conversion_50_to_100,share_30_plus,share_50_plus,share_under_10,median_score
+Sachin Tendulkar,player,452,145,49,0.338,0.493,0.321,0.279,28.5
+Sachin Tendulkar,peers,3092,795,165,0.208,0.426,0.257,0.291,23.0
+Virat Kohli,player,280,122,50,0.41,0.571,0.436,0.243,37.0
+Virat Kohli,peers,1931,556,156,0.281,0.46,0.288,0.256,26.0
