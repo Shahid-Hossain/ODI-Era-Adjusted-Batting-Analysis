@@ -15,6 +15,11 @@ mi = pd.read_csv(TABLES / "03_match_index.csv")
 yp = pd.read_csv(TABLES / "04_yearly_plus_career.csv")
 adj = pd.read_csv(TABLES / "05_bowling_adjusted_indexes.csv")
 val = pd.read_csv(TABLES / "01_validation.csv").set_index("player")
+span = {}
+for name, r in val.iterrows():
+    first, last, dob = (pd.to_datetime(r[c], format="%d %b %Y") for c in ("first", "last", "dob"))
+    span[name] = {"first": first, "last": last, "debut_age": int((first - dob).days // 365.25),
+                  "years": last.year - first.year}   # calendar span, e.g. 1989-2012 = 23
 
 HEADLINE = ["Match index", "Average+ / SR+, bowling-adjusted"]
 head = boot[boot["index"].isin(HEADLINE)].copy()
@@ -105,6 +110,15 @@ lines = [
     f"- **Robustness:** Kohli leads on average in {k_avg} of {n} variants; Sachin leads on strike "
     f"rate in {s_sr} of {n} variants (team-mates only, opposition only, Full Member matches only, "
     "bowling-adjusted, yearly peers).",
+    f"- **What these indexes leave out: longevity and volume.** Every index here measures quality "
+    f"per dismissal or per ball, so it says nothing about how long a player kept it up. Sachin "
+    f"debuted at {span[S]['debut_age']}, had a {span[S]['years']}-year career "
+    f"({span[S]['first']:%Y}–{span[S]['last']:%Y}) and scored {val.loc[S, 'runs']:,.0f} runs in "
+    f"{val.loc[S, 'innings']} innings, staying above his peers in most of those years. Kohli's "
+    f"{val.loc[K, 'runs']:,.0f} runs came in {val.loc[K, 'innings']} innings over "
+    f"{span[K]['years']} years ({span[K]['first']:%Y}–{span[K]['last']:%Y}; debut at "
+    f"{span[K]['debut_age']}; career still running at the "
+    "cutoff). Sustained volume is a big part of Sachin's case and sits outside these numbers.",
 ]
 (ROOT / "outputs" / "summary.md").write_text("\n".join(lines) + "\n")
 print("  summary -> outputs/summary.md")
